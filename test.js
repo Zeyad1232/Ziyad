@@ -1,21 +1,18 @@
- const display = document.getElementById('display');
-
  function addToDisplay(input) {
- 
+    const display = document.getElementById('display'); // حط السطر ده هنا
     display.value += input;
 }
 
- function clearDisplay() {
+function clearDisplay() {
+    const display = document.getElementById('display'); // وهنا كمان
     display.value = "";
 }
 
-   display.value = display.value.slice(0, -1);
-}
-
 function calculate() {
+    const display = document.getElementById('display'); // وهنا كمان
     try {
-       display.value = eval(display.value);
-    } catch (error) {
+        display.value = eval(display.value);
+    } catch (e) {
         display.value = "Error";
     }
 }
